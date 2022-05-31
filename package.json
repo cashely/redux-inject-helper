@@ -1,24 +1,20 @@
 {
-  "name": "react",
-  "version": "1.0.0",
-  "description": "React example starter project",
+  "name": "redux-inject-helper",
+  "version": "0.0.1",
+  "description": "A tool about redux for react helper",
   "keywords": [
-    "react",
-    "starter"
+    "redux",
+    "redux-helper"
   ],
   "main": "dist/index.js",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.2",
     "immer": "9.0.12",
-    "react": "18.0.0",
-    "react-dom": "18.0.0",
-    "react-redux": "8.0.1",
-    "react-scripts": "4.0.0",
-    "redux": "4.2.0",
-    "redux-devtools-extension": "2.13.9"
+    "redux": "4.2.0"
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",
+    "@rollup/plugin-node-resolve": "^13.3.0",
     "rollup": "^2.75.3",
     "typescript": "4.1.3"
   },
