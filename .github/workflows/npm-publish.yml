@@ -27,8 +27,9 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-      - run: node gpr-hack.js
-      - run: npm install
-      - run: npm publish --access public
+      - name: install
+        run: yarn
+      - name: publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: yarn semantic-release
