@@ -1,22 +1,23 @@
 {
   "name": "redux-inject-helper",
-  "version": "0.0.2",
+  "version": "0.0.12",
   "description": "A tool about redux for react helper",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cashely/redux-inject-helper.git"
+  },
   "keywords": [
-    "redux",
     "redux-helper"
   ],
   "main": "dist/index.js",
   "dependencies": {
-    "@reduxjs/toolkit": "^1.8.2",
     "immer": "9.0.12",
-    "redux": "4.2.0"
+    "redux": "4.1.2"
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",
     "@rollup/plugin-node-resolve": "^13.3.0",
-    "rollup": "^2.75.3",
-    "typescript": "4.1.3"
+    "rollup": "^2.75.3"
   },
   "scripts": {
     "start": "react-scripts start",

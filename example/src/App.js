@@ -1,7 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-
+import store from './store';
+import { useEffect } from 'react';
+import { useSelector } from 'react-redux';
+import { createSlice } from 'redux-inject-helper';
 function App() {
+  const s = createSlice(store);
+  const state = useSelector(state => state[s.name])
   return (
     <div className="App">
       <header className="App-header">
@@ -15,8 +20,12 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
+          {state.ecount}
           Learn React
+          {state.count}
         </a>
+        <button onClick={() => s.add(1)}>+</button>
+        <button onClick={() => s.asyncAdd(3)}>async add</button>
       </header>
     </div>
   );
