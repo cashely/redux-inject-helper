@@ -27,8 +27,8 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
+      - run: node gpr-hack.js
       - run: npm install
-      - run: npm publish
-      - run: echo ${{secrets.NPM_TOKEN}}
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
